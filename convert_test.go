@@ -14,3 +14,23 @@ func Test_ConvertToDigitalNumber_By_Number_1_Should_Get_One(t *testing.T) {
 
 	assert.Equal(t, expectedResult, actualResult, "The two words should be the same.")
 }
+
+func Test_ConvertToDigitalNumber_By_Number_2_Should_Get_Two(t *testing.T) {
+	expectedResult := `_
+	_|
+	|_`
+
+	actualResult := convertToDigitalNumber(2)
+
+	assert.Equal(t, expectedResult, actualResult, "The two words should be the same.")
+}
+
+func Test_ConvertToDigitalNumber_By_Number_3_Should_Get_Three(t *testing.T) {
+	expectedResult := `_
+	_|
+	_|`
+
+	actualResult := convertToDigitalNumber(3)
+
+	assert.Equal(t, expectedResult, actualResult, "The two words should be the same.")
+}
