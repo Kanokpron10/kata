@@ -1,12 +1,16 @@
 package kata
 
-import "testing"
+import (
+	"testing"
 
-func Test_ConvertToDigitalNumber_By_Number_1_Should_Get_1(t *testing.T) {
-	expectedResult := 1
+	"github.com/stretchr/testify/assert"
+)
+
+func Test_ConvertToDigitalNumber_By_Number_1_Should_Get_One(t *testing.T) {
+	expectedResult := `|
+	|`
+
 	actualResult := convertToDigitalNumber(1)
 
-	if expectedResult != actualResult {
-		t.Errorf("Expect %v but got %v", expectedResult, actualResult)
-	}
+	assert.Equal(t, expectedResult, actualResult, "The two words should be the same.")
 }
