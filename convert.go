@@ -2,15 +2,21 @@ package kata
 
 func convertToDigitalNumber(number int) string {
 	if number == 1 {
-		return `|
-		|`
+		return ` 
+	|
+	|`
 	}
 	if number == 2 {
 		return `_
 	_|
 	|_`
 	}
-	return `_
+	if number == 3 {
+		return `_
 	_|
 	_|`
+	}
+	return ` 
+	|_|
+	  |`
 }

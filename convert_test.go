@@ -7,7 +7,8 @@ import (
 )
 
 func Test_ConvertToDigitalNumber_By_Number_1_Should_Get_One(t *testing.T) {
-	expectedResult := `|
+	expectedResult := ` 
+	|
 	|`
 
 	actualResult := convertToDigitalNumber(1)
@@ -31,6 +32,16 @@ func Test_ConvertToDigitalNumber_By_Number_3_Should_Get_Three(t *testing.T) {
 	_|`
 
 	actualResult := convertToDigitalNumber(3)
+
+	assert.Equal(t, expectedResult, actualResult, "The two words should be the same.")
+}
+
+func Test_ConvertToDigitalNumber_By_Number_4_Should_Get_Four(t *testing.T) {
+	expectedResult := ` 
+	|_|
+	  |`
+
+	actualResult := convertToDigitalNumber(4)
 
 	assert.Equal(t, expectedResult, actualResult, "The two words should be the same.")
 }
