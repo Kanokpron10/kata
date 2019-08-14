@@ -15,6 +15,7 @@ func convertToDigitalNumber(number int) string {
 	|_|
 	  |`,
 	}
+
 	if number == 1 {
 		return digitalNumber[1]
 	}
